@@ -1,6 +1,6 @@
 const htmlTemplate = document.createElement('template');
 htmlTemplate.innerHTML = ` <style> h1{background-color: yellow}</style>
-<h1> I am asif </h1>
+<h1> <slot name="first"> </slot>  <slot name="second"> </slot></h1>
 `;
 class UserCard extends HTMLElement {
     constructor() {
